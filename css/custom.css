@@ -1,3 +1,4 @@
+
 :root{
     --primary-color: #0c0f16;
     --secondary-color: #121721;
@@ -8,6 +9,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,14 @@
     text-decoration: none;
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .max-width{
@@ -62,6 +70,24 @@ body{
     cursor:pointer;
     display: none;
 }
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 1.5625em  1.4375em;
+    color: var(--white-color);
+    text-align: center;
+    margin-top: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer span a{
+    color: var(--fourth-color);
+}
+
+footer span a:hover{
+    color: var(--white-color);
+}
+
 /*@media cria os breakpoint, o código acima mostra desaparee caso a tela esteja no max-width setado */
 @media (max-width: 59.1875em){
     .menu-btn{
@@ -107,4 +133,6 @@ body{
         max-width: 58.125em; 
     } 
 }   
+
+
 
