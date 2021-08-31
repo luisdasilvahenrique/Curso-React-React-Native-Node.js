@@ -76,6 +76,12 @@ body{
     }
     .navbar .menu.active{
         left: 0;
+        /*Centralizar o conteudo do navbar*/
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
     }
     .navbar .menu li{
         display: block;
