@@ -18,8 +18,8 @@ body{
 }
 
 .max-width{
-    max-width: 1300px;
-    padding: 0 10px;
+    max-width: 81.25em;
+    padding: 0 0.625em;
     margin: auto;
 }
 
@@ -27,9 +27,9 @@ body{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 20px 0;
+    padding: 1.25em 0;
     background-color: var(--secondary-color);
-    border-bottom: solid var(--third-color) 1px;
+    border-bottom: solid var(--third-color) 0.0625em    ;
 }
 .navbar .max-width{
     display: flex;
@@ -38,7 +38,7 @@ body{
 }
 .navbar .logo a{
     color: var(--fourth-color);
-    font-size: 25px;
+    font-size:  1.5625em;
     font-weight: 500;
 }
 .navbar .menu li{
@@ -48,18 +48,18 @@ body{
 .navbar .menu li a{
     display: block;
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left:  1.5625em;
 }
 .menu-btn{
     color:var(--white-color);
-    font-size: 23px;
+    font-size: 1.4375em;
     cursor:pointer;
     display: none;
 }
 /*@media cria os breakpoint, o código acima mostra desaparee caso a tela esteja no max-width setado */
-@media (max-width: 947px){
+@media (max-width: 59.1875em){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -72,7 +72,7 @@ body{
         left: -100%;
         top: 0;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 5em;
     }
     .navbar .menu.active{
         left: 0;
@@ -82,7 +82,7 @@ body{
     }
     .navbar .menu li a{
         display: inline-block;
-        margin: 13px 0;
-        font-size: 25px;
+        margin: 0.8125em 0;
+        font-size:  1.5625em;
     }
 }
