@@ -5,6 +5,7 @@
     --third-color: #1b202a;
     --fourth-color: #547ec7;
     --white-color: #fff;
+    --button-color: #4CAF50;
      
 }
 
@@ -70,7 +71,68 @@ body{
     cursor:pointer;
     display: none;
 }
+/*Section do site*/
+section{
+    padding: 3.125em 0;
+}
 
+@media (max-width: 43.125em){
+    section{
+        padding: 1.25em 0;
+    }
+}
+
+.top{   
+    color: var(--white-color);
+    display: flex;
+    background: url('../images/topo_v2.jpg')no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 31.25em;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.top .max-width{
+    width: 100%;
+    display:flex;
+    padding: 1.25em;
+}
+.top .top-content .text-1{
+    font-size: 1.5625em;
+}
+.top .top-content .text-2{
+    font-style: 3.4375em;
+    font-weight: 400;
+
+}
+.top .top-content .text-3{
+    font-size: 2em;
+}
+
+.top .top-content button{
+  border: none;
+  color: var(--third-color);
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.25em 0.125em;
+  cursor: pointer;
+
+  border-radius: 0.25em;
+}
+
+.top .top-content button.submit{
+    
+   background-color:var(--button-color);
+}
+.top .top-content button.submit:hover{
+    background-color: var(--white-color);
+    transition: all 0.5s;
+}
+/*Footer do site*/
 footer{
     background-color: var(--secondary-color);
     padding: 1.5625em  1.4375em;
@@ -107,7 +169,6 @@ footer span a:hover{
         left: -100%;
         top: 0;
         text-align: center;
-        /*para centralizar*/
         padding: 5em;
         transition: all 0.3s ease;
     }
@@ -133,6 +194,8 @@ footer span a:hover{
         max-width: 58.125em; 
     } 
 }   
+
+
 
 
 
