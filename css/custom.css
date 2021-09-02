@@ -4,9 +4,8 @@
     --secondary-color: #121721;
     --third-color: #1b202a;
     --fourth-color: #547ec7;
+    --fifth-color:#b02ab7;
     --white-color: #fff;
-    --button-color: #4CAF50;
-     
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
@@ -126,12 +125,71 @@ section{
 
 .top .top-content button.submit{
     
-   background-color:var(--button-color);
+   background-color:var(--white-color);
 }
 .top .top-content button.submit:hover{
-    background-color: var(--white-color);
-    transition: all 0.5s;
+    background-color: var(--fifth-color);
+    transition: all 1s;
 }
+/* Services */
+
+.services{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.services .title{
+    text-align: center;
+    margin: 1.5em;
+    font-size: 2.1875em;
+    font-weight: 400;
+}
+
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .serv-content .card{
+   width: calc(33% - 1.25em);
+   background-color: var(--third-color);
+   text-align: center;
+   border-radius: 0.375em;
+   padding: 3.125em 1.5625em;
+   cursor: pointer;
+   transition: all 1s ease;
+}
+
+.services .serv-content .card:hover{
+    background-color: var(--fifth-color);
+    transition: all 1s ease;
+}
+
+.services .serv-content .card i{
+    font-size: 3.125em;
+    color: var(--fifth-color);
+    transition: all 1s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: var(--white-color);
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.services .serv-content .card .text{
+    font-size: 1,5625em;
+    font-weight: 500;
+    margin: 0.75em 0 0.5em 0; 
+}
+
 /*Footer do site*/
 footer{
     background-color: var(--secondary-color);
