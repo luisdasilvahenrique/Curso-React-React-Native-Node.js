@@ -253,6 +253,21 @@ footer span a:hover{
     } 
 }   
 
+/* Breakpoint para adaptação mobile(card) */
+    @media (max-width: 59.1875em){
+        .services .serv-content .card{
+            width: calc(50% - 0.625em);
+            margin-bottom: 1.25em;
+        }
+    }
+/* Breakpoint para adaptação mobile(card)390px* */
+    @media (max-width: 24.375em){
+        .services .serv-content .card{
+            width: calc(100%);
+        }
+    }
+
+
 
 
 
