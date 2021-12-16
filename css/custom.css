@@ -62,6 +62,7 @@ body{
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a{
     display: block;
     color: var(--white-color);
@@ -69,6 +70,7 @@ body{
     font-weight: 500;
     margin-left:  1.5625em;
 }
+
 .menu-btn{
     color:var(--white-color);
     font-size: 1.4375em;
@@ -89,7 +91,7 @@ section{
 .top{   
     color: var(--white-color);
     display: flex;
-    background: url('../images/topo_v2.jpg')no-repeat center;
+    background: url('../images/3081629.svg')no-repeat center;
     background-size: cover;
     height: 100vh;
     min-height: 31.25em;
@@ -102,27 +104,33 @@ section{
     display:flex;
     padding: 1.25em;
 }
+
+.top .top-content{
+    color: #1b202a;
+}
+
 .top .top-content .text-1{
-    font-size: 1.5625em;
+    font-size: 2rem;
 }
 .top .top-content .text-2{
-    font-style: 3.4375em;
-    font-weight: 400;
+    font-size: 3rem;
+    font-style: inherit;
+    
 
 }
 .top .top-content .text-3{
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .top .top-content button{
   border: none;
   color: var(--third-color);
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
-  margin: 0.25em 0.125em;
+  font-size: 1rem;
+  margin: 0.25rem 0.125rem;
   cursor: pointer;
 
   border-radius: 0.25em;
@@ -130,7 +138,7 @@ section{
 
 .top .top-content button.submit{
     
-   background-color:var(--white-color);
+   background-color:var(--fourth-color);
 }
 .top .top-content button.submit:hover{
     background-color: var(--fifth-color);
