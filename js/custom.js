@@ -7,4 +7,5 @@
         ('html').css("scrollBehavior", "smooth");
     })
 });
-
+// first function: add site responsive
+// second function: add light navigation
